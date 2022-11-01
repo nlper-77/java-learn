@@ -33,10 +33,15 @@ public class HelloWorld {
         System.out.println(a ^ b); // 按位异或 0000 1100 -> 0x0c
         System.out.println(~c);
         System.out.println((int) 0.7); //强制类型转换
-        
+
         /* 
          * 字符集和编码
+         * java 采用utf-6 一个字符占用2个byte
         */
-
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println("a+b="+(a+b)); // 字符串+数字 会把数字转换成字符串，再进行相加
+        float d = 10.0f;
+        System.out.println("a+b+d="+a+b+d); 
     }
 }
